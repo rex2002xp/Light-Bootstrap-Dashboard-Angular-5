@@ -19,9 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "assets/sass/light-bootstrap-dashboard.scss",
-        "assets/css/pe-icon-7-stroke.css"
+        "styles.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
