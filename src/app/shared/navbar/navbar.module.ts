@@ -8,7 +8,8 @@ import { NavbarComponent } from './navbar.component';
     RouterModule,
     CommonModule
   ],
-  declarations: [NavbarComponent],
+  declarations: [ NavbarComponent ],
   exports: [ NavbarComponent ]
 })
-export class NavbarModule { }
+export class NavbarModule {
+}

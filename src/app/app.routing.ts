@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
-import { BrowserModule  } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from "./home/home.component";
 
-const routes: Routes =[];
+const routes: Routes = [
+  {path: 'dashboard', component: HomeComponent},
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'}
+];
 
 @NgModule({
   imports: [
@@ -11,7 +15,7 @@ const routes: Routes =[];
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  exports: [
-  ],
+  exports: [],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

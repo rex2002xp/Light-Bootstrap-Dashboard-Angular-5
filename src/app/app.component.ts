@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +8,18 @@ import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 })
 export class AppComponent implements OnInit {
 
-  constructor(public location: Location) {}
+  constructor(public location: Location) {
+  }
 
   ngOnInit() {
   }
 
-  isMap(path){
-    var title = this.location.prepareExternalUrl(this.location.path());
-    title = title.slice(1);
-    if (path == title) {
+  isMap(path) {
+    let titlee = this.location.prepareExternalUrl(this.location.path());
+    titlee = titlee.slice(1);
+    if (path === titlee) {
       return false;
-    }
-    else {
+    } else {
       return true;
     }
   }

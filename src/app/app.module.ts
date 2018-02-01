@@ -15,7 +15,6 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -26,6 +25,7 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule {
+}
