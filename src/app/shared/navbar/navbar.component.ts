@@ -34,14 +34,14 @@ export class NavbarComponent implements OnInit {
     body.classList.add('nav-open');
 
     this.sidebarVisible = true;
-  };
+  }
 
   sidebarClose() {
     const body = document.getElementsByTagName('body')[ 0 ];
     this.toggleButton.classList.remove('toggled');
     this.sidebarVisible = false;
     body.classList.remove('nav-open');
-  };
+  }
 
   sidebarToggle() {
     // const toggleButton = this.toggleButton;
@@ -51,12 +51,12 @@ export class NavbarComponent implements OnInit {
     } else {
       this.sidebarClose();
     }
-  };
+  }
 
   getTitle() {
-    var titlee = this.location.prepareExternalUrl(this.location.path());
+    let titlee = this.location.prepareExternalUrl(this.location.path());
     titlee = titlee.split('/').pop();
-    for (var item = 0; item < this.listTitles.length; item++) {
+    for (let item = 0; item < this.listTitles.length; item++) {
       if (this.listTitles[ item ].path === titlee) {
         return this.listTitles[ item ].title;
       }
